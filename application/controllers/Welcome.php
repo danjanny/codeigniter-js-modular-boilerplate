@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+use Danjan\Testing;
+
 class Welcome extends CI_Controller {
 
 	public function index()
@@ -9,6 +11,7 @@ class Welcome extends CI_Controller {
 	}
 
 	public function name() {
-	    echo 'asd';
+	    $t = new Testing();
+	    echo $t->getData();
     }
 }

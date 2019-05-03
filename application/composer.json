@@ -1,0 +1,17 @@
+{
+    "name": "danjanny/application",
+    "authors": [
+        {
+            "name": "danjanny",
+            "email": "ridhadanjanny.mail@gmail.com"
+        }
+    ],
+    "require": {
+        "chriskacerguis/codeigniter-restserver": "^3.0"
+    },
+    "autoload" : {
+        "psr-4": {
+            "Danjan\\": "src/"
+        }
+    }
+}

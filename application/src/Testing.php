@@ -9,11 +9,12 @@
 namespace Danjan;
 
 class Testing {
+    private $name = "Ridha Danjanny";
     public function __construct()
     {
     }
 
     public function getData() {
-        echo 'Ridha Danjanny';
+        echo $this->name;
     }
 }

@@ -13,5 +13,12 @@ class Welcome extends CI_Controller {
 	public function name() {
 	    $t = new Testing();
 	    echo $t->getData();
-    }
+	}
+	
+	public function login() {
+		$data['data_source'] = ['nama' => 'Ridha Danjanny'];
+		// extend to template.php
+		$data['content'] = 'login/login';
+		$this->load->view('template', $data);
+	}
 }
